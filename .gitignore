@@ -1,0 +1,13 @@
+# ---- Raw data (too large for git; see README to obtain it) ----
+data/raw/*
+!data/raw/.gitkeep
+
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
