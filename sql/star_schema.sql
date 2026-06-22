@@ -29,6 +29,8 @@ SELECT
     f.weight_carried,
     f.odds,
     f.implied_prob,
+    f.prob_decile,
+    f.won,
     f.position_at_finish,
     f.speed_early,
     f.speed_mid,
@@ -38,7 +40,7 @@ SELECT
     f.early_position,
     f.late_position,
     f.position_change,
-    f.pace_cluster
+    f.pace_cluster_label
 FROM read_parquet('{FEATURES_PATH}') f
 JOIN dim_race r
     ON f.track_id = r.track_id AND f.race_date = r.race_date AND f.race_number = r.race_number
