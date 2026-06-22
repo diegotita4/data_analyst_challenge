@@ -1,41 +1,27 @@
-# Data Analyst Challenge — RAC
+# Data Analyst Challenge
 
-Statistical analysis of NYRA thoroughbred racing data (2019 season)
-for the Data Analyst Jr. position at RAC.
+Statistical analysis of NYRA thoroughbred racing data (2019 season) for the Data Analyst Jr. position at RAC.
 
 ## What this project does
 
-Takes GPS tracking data, race results, and betting odds from three New
-York racetracks (Aqueduct, Belmont, Saratoga) across the full 2019
-season and turns them into actionable insights for trainers, vets, and
-racing operations.
+Takes GPS tracking data, race results, and betting odds from three New York racetracks (Aqueduct, Belmont, Saratoga) across the full 2019 season and turns them into actionable insights for trainers, vets, and racing operations.
 
 Four main questions answered:
 1. How do horses' positions change during a race, and why?
 2. Are pacing strategies significant or coincidental?
-3. What factors drive horse fatigue, and which horses should get a
-   post-race check?
+3. What factors drive horse fatigue, and which horses should get a post-race check?
 4. How well does the betting market actually predict outcomes?
 
 ## Key findings
 
-- **Pacing strategy matters** (p < 0.001): horses that go out fast and
-  fade finish worst on average. Sustained overall speed is the strongest
-  strategy of the three profiles identified.
-- **Fatigue is explainable**: weight carried, race distance, and track
-  condition together explain ~34% of fatigue variation (R² = 0.34).
-  Sloppy tracks and heavier loads are the biggest risk factors.
-- **320 horses (~2%)** show unusual deceleration patterns relative to
-  their own race — flagged as candidates for post-race veterinary review.
-- **The betting market works**, but with a systematic bias: implied
-  probabilities overstate true win chances due to the track's takeout
-  fee. AUC = 0.78, Brier score = 0.102.
+- **Pacing strategy matters** (p < 0.001): horses that go out fast and fade finish worst on average. Sustained overall speed is the strongest strategy of the three profiles identified.
+- **Fatigue is explainable**: weight carried, race distance, and track condition together explain ~34% of fatigue variation (R² = 0.34). Sloppy tracks and heavier loads are the biggest risk factors.
+- **320 horses (~2%)** show unusual deceleration patterns relative to their own race, flagged as candidates for post-race veterinary review.
+- **The betting market works**, but with a systematic bias: implied probabilities overstate true win chances due to the track's takeout fee. AUC = 0.78, Brier score = 0.102.
 
 ## Data source
 
-"Big Data Derby 2022" competition dataset (NYRA / NYTHA, via Kaggle).
-Raw CSV files are not included in this repo (tracking table is ~320MB).
-Place them in `data/raw/` before running the notebooks.
+"Big Data Derby 2022" competition dataset (NYRA / NYTHA, via Kaggle). Raw CSV files are not included in this repo (tracking table is ~320MB). Place them in `data/raw/` before running the notebooks.
 
 ## Project structure
 
