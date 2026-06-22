@@ -8,6 +8,12 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# ---- DuckDB ----
+*.duckdb
+
+# ---- Claude Code ----
+.claude/
+
 # ---- OS ----
 .DS_Store
 Thumbs.db
